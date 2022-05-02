@@ -14,8 +14,13 @@ endif()
 find_package(ament_cmake_auto REQUIRED)
 ament_auto_find_build_dependencies()
 
-ament_auto_add_executable(vehicle_node
+ament_auto_add_library(vehicle_node SHARED
   src/vehicle_node.cpp
+)
+
+rclcpp_components_register_node(vehicle_node
+  PLUGIN "dvr::VehicleNode"
+  EXECUTABLE vehicle
 )
 
 if(BUILD_TESTING)

@@ -2,16 +2,13 @@
 
 namespace dvr {
 
-VehicleNode::VehicleNode() : Node("vehicle_node") {
+VehicleNode::VehicleNode(const rclcpp::NodeOptions& node_options)
+    : Node("vehicle_node", node_options) {
   id_ = this->declare_parameter<int>("uid", -1);
   RCLCPP_INFO(get_logger(), "Vehicle node %d", id_);
 }
 
 }  // namespace dvr
 
-int main(int argc, char** argv) {
-  rclcpp::init(argc, argv);
-  rclcpp::spin(std::make_shared<dvr::VehicleNode>());
-  rclcpp::shutdown();
-  return 0;
-}
+#include <rclcpp_components/register_node_macro.hpp>
+RCLCPP_COMPONENTS_REGISTER_NODE(dvr::VehicleNode)

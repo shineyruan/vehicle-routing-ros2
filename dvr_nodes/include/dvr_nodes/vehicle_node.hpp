@@ -7,7 +7,7 @@ namespace dvr {
 
 class VehicleNode : public rclcpp::Node {
 public:
-  explicit VehicleNode();
+  explicit VehicleNode(const rclcpp::NodeOptions& node_options);
 
 private:
   int id_;

@@ -55,7 +55,7 @@ def launch_vehicles(context, *args, **kwargs):
 
   for vid in range(int(num_vehicles)):
     vehicle_node = Node(package='dvr_nodes',
-                        executable='vehicle_node',
+                        executable='vehicle',
                         name='vehicle_{}'.format(vid),
                         parameters=[{
                             'uid': vid
