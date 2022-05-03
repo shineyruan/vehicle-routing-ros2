@@ -40,3 +40,8 @@ ros2 launch dvr_launch dvr.launch.py number_vehicles:=10
 ```
 
 6. Try more examples by modifying the parameters in `dvr_launch/config`!
+
+## References
+- F. Bullo, E. Frazzoli, M. Pavone, K. Savla and S. L. Smith, "[Dynamic Vehicle Routing for Robotic Systems](https://ieeexplore.ieee.org/abstract/document/5954127?casa_token=sAaSTkWYbO8AAAAA:eE9HJHY242a0InCpEhtyF0-iPnP2DSIq73AVHbDkbQVy-yuM4i_RGsC-RiwneH00c-z6EfxoNdU)," in Proceedings of the IEEE, vol. 99, no. 9, pp. 1482-1504, Sept. 2011, doi: 10.1109/JPROC.2011.2158181.
+- M. Pavone, A. Arsie, E. Frazzoli and F. Bullo, "Distributed Algorithms for Environment Partitioning in Mobile Robotic Networks," in IEEE Transactions on Automatic Control, vol. 56, no. 8, pp. 1834-1848, Aug. 2011, doi: 10.1109/TAC.2011.2112410.
+- Vardi, Yehuda, and Cun-Hui Zhang. "The multivariate L1-median and associated data depth." Proceedings of the National Academy of Sciences 97.4 (2000): 1423-1426.
