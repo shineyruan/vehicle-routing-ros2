@@ -4,3 +4,4 @@ ColumnLimit: 80
 AccessModifierOffset: -2
 AlignConsecutiveAssignments: true
 AlignConsecutiveMacros: true
+AllowShortIfStatementsOnASingleLine: AllIfsAndElse

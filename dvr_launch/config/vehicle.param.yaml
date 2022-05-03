@@ -1,0 +1,6 @@
+/**:
+  ros__parameters:
+    speed: 0.5 # in m/s
+    rate: 100.0 # state update rate (in hz)
+    visualization:
+      rate: 10.0 # visualization update rate (in hz)
