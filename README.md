@@ -28,7 +28,7 @@ git clone https://github.com/shineyruan/vehicle-routing-ros2.git
 
 ```bash
 cd ~/dvr_ws
-source /opt/ros/galactic/setup.bash
+source /opt/ros/humble/setup.bash
 sudo rosdep init
 rosdep update
 rosdep install --from-paths src -i -y
