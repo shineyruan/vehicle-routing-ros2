@@ -1,11 +1,11 @@
 # vehicle-routing-ros2
-Implementation of dynamic vehicle routing (DVR) algorithms in a truely distributed fashion based on ROS 2.
+Implementation of dynamic vehicle routing (DVR) algorithms in a truly distributed fashion based on ROS 2.
 
 For a simplified version, please check out https://github.com/lb-robotics/python-vehicle-routing.
 
 ## Software Requirements
-- Ubuntu 20.04 LTS (Focal)
-- ROS 2 Galactic
+- Ubuntu 22.04 LTS (Jammy)
+- ROS 2 Humble
 
 ## Usage
 1. Create ROS workspace.
