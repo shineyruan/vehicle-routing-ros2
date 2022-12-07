@@ -41,6 +41,20 @@ cd ~/dvr_ws
 colcon build --symlink-install --packages-up-to dvr_launch --cmake-args -DCMAKE_EXPORT_COMPILE_COMMANDS=1
 ```
 
+**Note.** For easier Colcon usage, one can make use of the [Colcon mixin repository](https://github.com/colcon/colcon-mixin-repository). Simply install the Colcon mixin extension via
+
+```bash
+sudo apt install python3-colcon-mixin
+colcon mixin add default https://raw.githubusercontent.com/colcon/colcon-mixin-repository/master/index.yaml
+colcon mixin update default
+```
+
+then we can get rid of the `--cmake-args` arguments:
+
+```bash
+colcon build --symlink-install --packages-up-to dvr_launch --mixin compile-commands
+```
+
 5. Run the demo. `number_vehicles` controls the number of vehicles generated. (Default is 10)
 
 ```bash
