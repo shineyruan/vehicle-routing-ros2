@@ -29,3 +29,9 @@ repos:
     hooks:
       - id: clang-format
         types_or: [c++, c, cuda]
+
+  - repo: https://github.com/psf/black
+    rev: 23.3.0
+    hooks:
+      - id: black
+        args: [--line-length=88]
