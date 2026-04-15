@@ -43,8 +43,8 @@ VehicleNode::VehicleNode(const rclcpp::NodeOptions& node_options)
   state_update_rate_ = this->declare_parameter<double>("rate", 0.1);
   state_dt_          = 1.0 / state_update_rate_;
   auto viz_period_ns = rclcpp::Rate(state_update_rate_).period();
-  timer_control_     = rclcpp::create_timer(this, get_clock(), viz_period_ns,
-                                            std::bind(&VehicleNode::OnTimer, this));
+  timer_control_ = rclcpp::create_timer(this, get_clock(), viz_period_ns,
+                                        std::bind(&VehicleNode::OnTimer, this));
 
   pub_state_ = this->create_publisher<dvr_msgs::msg::VehicleStateStamped>(
       "state", rclcpp::QoS{1});
